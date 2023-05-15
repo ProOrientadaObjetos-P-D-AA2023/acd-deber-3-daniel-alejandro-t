@@ -1,0 +1,57 @@
+# Diagrama de clases en UML
+## Main
+
++-----------------------------------+
+|           <<package>>             |
+|            problema01             |
++-----------------------------------+
+| <<class>>                         |
+|              main                 |
++-----------------------------------+
+| -productos: List<Producto>        |
+| -carrito: List<Producto>          |
+| -scanner: Scanner                 |
++-----------------------------------+
+| +main(args: String[]): void       |
+| +mostrarProductos(productos:      |
+|   List<Producto>): void           |
+| +mostrarProductosDelCarrito(      |
+|   carrito: List<Producto>): void  |
+| +agregarProductoAlCarrito(        |
+|   productos: List<Producto>,      |
+|   carrito: List<Producto>,        |
+|   indice: int): void              |
+| +eliminarProductoDelCarrito(      |
+|   productos: List<Producto>,      |
+|   carrito: List<Producto>,        |
+|   indice: int): void              |
++-----------------------------------+
+
+
+## Producto
+
++-------------------------------+
+|          <<class>>            |
+|           Producto            |
++-------------------------------+
+| -nombre: String               |
+| -cantidad: int                |
+| -precio: double               |
++-------------------------------+
+| +Producto(nombre: String,     |
+|   cantidad: int,              |
+|   precio: double)             |
+| +getNombre(): String          |
+| +getCantidad(): int           |
+| +getPrecio(): double          |
+| +setNombre(nombre: String): void|
+| +setCantidad(cantidad: int): void|
+| +setReducirCantidadEnUno(): void|
+| +setAumentarCantidadEnUno(): void|
+| +setPrecio(precio: double): void|
+| +setCalculaDescuentoPorVolumen(cantidad: int): void|
+| +toString(): String           |
++-------------------------------+
+
+
+

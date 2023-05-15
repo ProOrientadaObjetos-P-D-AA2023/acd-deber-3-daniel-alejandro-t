@@ -1,0 +1,37 @@
+# Diagrama de clases en UML
+## Clase Empleado
++-------------------------------+
+|          <<class>>            |
+|           Empleado            |
++-------------------------------+
+| -nombre: String               |
+| -apellido: String             |
+| -edad: int                    |
+| -salario: double              |
++-------------------------------+
+| +Empleado(nombre: String,     |
+|   apellido: String,           |
+|   edad: int,                  |
+|   salario: double)            |
+| +toString(): String           |
+| +setAumentarSalario(porcentaje: double): void|
+| +setNombre(nombre: String): void|
+| +getNombre(): String          |
+| +setApellido(apellido: String): void|
+| +getApellido(): String        |
+| +setEdad(edad: int): void     |
+| +getEdad(): int               |
+| +setSalario(salario: double): void|
+| +getSalario(): double         |
++-------------------------------+
+
+## Clase main
++-------------------------------+
+|          <<class>>            |
+|           main                |
++-------------------------------+
+|                               |
++-------------------------------+
+| +main(args: String[]): void   |
+| +mostrarEmpleados(empleados: List<Empleado>): void|
++-------------------------------+
